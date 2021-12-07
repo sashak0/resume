@@ -1,0 +1,75 @@
+@font-face {
+  font-family: BebasNeue;
+  src: url("./fonts/BebasNeue Book.ttf") format("truetype");
+}
+
+* {
+  font-family: Calibri;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: BebasNeue;
+}
+
+h3:first-child {
+  padding-top: 1rem;
+}
+
+h3 {
+  padding-top: 2rem;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: inherit !important;
+}
+
+@media print {
+  .col-md-3 {
+    width: 25% !important;
+  }
+}
+
+@media screen {
+  .container-lg {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.left-col {
+  background-color: #f2f2f2;
+  min-width: 237px;
+}
+
+.left-col h3 {
+  color: blue;
+}
+
+.contacts img {
+  width: 1rem;
+}
+
+.contacts tr {
+  height: 30px;
+  vertical-align: middle;
+}
+
+td:not(:first-child) {
+  padding-left: 0.5rem;
+}
+
+.h-underline {
+  border-bottom: 1px solid palevioletred;
+}
+
+.right-col .row {
+  margin-top: 0.5rem;
+}
+
+.years-col {
+  max-width: 120px !important;
+}
