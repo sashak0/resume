@@ -22,7 +22,7 @@ h3 {
   padding-top: 2rem;
 }
 
-a {
+a:not(:hover) {
   color: inherit !important;
   text-decoration: inherit !important;
 }
@@ -37,6 +37,10 @@ a {
   .container-lg {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .pdf-icon {
+    width: 50px;
   }
 }
 

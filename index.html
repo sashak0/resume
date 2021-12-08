@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
     <link
       rel="stylesheet"
@@ -12,9 +13,25 @@
   </head>
   <body>
     <div class="container-lg">
-      <div>
-        <h1 class="name display-6">Sasha K</h1>
-        <h2 class="job-title">Web Developer</h2>
+      <div class="row">
+        <div class="col">
+          <h1
+            class="name display-6"
+            title="My official name is very long. Everyone just calls me Sasha."
+          >
+            Sasha K
+          </h1>
+          <h2 class="job-title">Web Developer</h2>
+        </div>
+        <div class="col-auto">
+          <a href="resources/Sasha resume.pdf" download>
+            <img
+              class="pdf-icon"
+              title="Download pdf"
+              src="./css/icons/pdf.svg"
+            />
+          </a>
+        </div>
       </div>
       <div class="row">
         <div class="col-12 col-md-3 left-col pb-3">
@@ -174,5 +191,4 @@
       </div>
     </div>
   </body>
-  <footer></footer>
 </html>
