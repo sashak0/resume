@@ -3,11 +3,6 @@
   src: url("./fonts/BebasNeue Book.ttf") format("truetype");
 }
 
-* {
-  font-family: Calibri;
-  -webkit-font-smoothing: antialiased;
-}
-
 h1,
 h2,
 h3 {
@@ -28,6 +23,10 @@ a:not(:hover) {
 }
 
 @media print {
+  * {
+    font-family: Calibri;
+  }
+
   .col-md-3 {
     width: 25% !important;
   }
