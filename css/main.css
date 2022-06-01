@@ -76,3 +76,7 @@ td:not(:first-child) {
 .years-col {
   max-width: 120px !important;
 }
+
+.experience-sub li {
+  margin-top: 0.5em;
+}
