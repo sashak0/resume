@@ -1,16 +1,17 @@
 @font-face {
   font-family: BebasNeue;
-  src: url("./fonts/BebasNeue Book.ttf") format("truetype");
+  src: url("./fonts/BebasNeue\ Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Calibri;
+  src: url("./fonts/Calibri\ Regular.ttf") format("truetype");
 }
 
 h1,
 h2,
 h3 {
   font-family: BebasNeue;
-}
-
-h3:first-child {
-  padding-top: 1rem;
 }
 
 h3 {
@@ -30,6 +31,20 @@ a:not(:hover) {
   .col-md-3 {
     width: 25% !important;
   }
+
+  .no-print {
+    display: none;
+  }
+
+  .col-auto-print {
+    flex: 0 0 auto !important;
+    width: auto !important;
+  }
+
+  .pt-md-3 {
+    padding-top: 1rem;
+  }
+
 }
 
 @media screen {
@@ -40,6 +55,10 @@ a:not(:hover) {
 
   .pdf-icon {
     width: 50px;
+  }
+
+  .print-only {
+    display: none;
   }
 }
 

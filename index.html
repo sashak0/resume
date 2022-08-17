@@ -1,142 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
-    <link
-      rel="stylesheet"
-      href="css/bootstrap.css"
-      type="text/css"
-      media="all"
-    />
-  </head>
-  <body>
-    <div class="container-lg">
-      <div class="row">
-        <div class="col">
-          <h1
-            class="name display-6"
-            title="My official name is very long. Everyone just calls me Sasha."
-          >
-            Sasha K
-          </h1>
-          <h2 class="job-title">Web Developer</h2>
-        </div>
-        <div class="col-auto">
-          <a href="resources/Sasha resume.pdf" download>
-            <img
-              class="pdf-icon"
-              title="Download pdf"
-              src="./css/icons/pdf.svg"
-            />
-          </a>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all" />
+</head>
+
+<script>
+  window.onload = function () {
+    const bio = `Natural-born thinker and problem-solver. Excellent at breaking things (also somehow fixing them).
+        I am quite proactive and won't hesitate to express my opinion or ask questions. I like structure, well established
+        guidelines, code rules and types. Love myself a good team with friendly, supportive people.`;
+    document.getElementById('bio').innerHTML = bio;
+    // document.getElementById('bio-print').innerHTML = bio;
+  };
+</script>
+
+<body>
+  <div class="container-lg">
+    <div class="row">
+      <div class="col col-auto-print">
+        <h1 class="name display-6" title="My official name is very long. Everyone just calls me Sasha.">
+          Sasha K
+        </h1>
+        <h2 class="job-title">Web Developer</h2>
       </div>
-      <div class="row">
-        <div class="col-12 col-md-3 left-col pb-3">
-          <div class="contacts">
-            <h3>Contact</h3>
+      <!-- <div class="col print-only pb-3" id="bio-print"></div> -->
+      <div class="col-auto no-print">
+        <a href="resources/Sasha resume.pdf" download>
+          <img class="pdf-icon" title="Download pdf" src="./css/icons/pdf.svg" />
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-auto no-print pb-3" id="bio"></div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-3 left-col pb-3">
+        <div class="contacts">
+          <h3 class="pt-3">Contact</h3>
 
-            <table>
-              <tbody>
-                <tr>
-                  <td><img src="./css/icons/linkedin.svg" alt="LinkedIn" /></td>
-                  <td>
-                    <a href="https://www.linkedin.com/in/sashak0/"
-                      >LinkedIn.com/in/SashaK0</a
-                    >
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><img src="./css/icons/github.svg" alt="GitHub" /></td>
-                  <td>
-                    <a href="https://github.com/sashak0">github.com/SashaK0</a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><img src="./css/icons/mail.svg" alt="email" /></td>
-                  <td>
-                    <a href="mailto:sasha.k0.work@gmail.com"
-                      >sasha.k0.work@gmail.com</a
-                    >
-                  </td>
-                </tr>
-
-                <tr>
-                  <td><img src="./css/icons/location.svg" alt="location" /></td>
-                  <td><a>Belgium</a></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <h3>Stack</h3>
-          <span
-            >Angular <span title="version, not years">(6+)</span>, Java <span title="version, not years">(8+)</span>, ElasticSearch, Typescript, HTML, CSS,
-            SASS, Bootstrap, Angular Material, Angular CLI, RxJS, NgRx Store,
-            Transloco, Spring Boot, Apache Jena, SPARQL, SQL, Git, Gradle,
-            Docker</span
-          >
-          <h3>Languages</h3>
           <table>
             <tbody>
               <tr>
-                <td>English</td>
-                <td>fluent</td>
+                <td><img src="./css/icons/linkedin.svg" alt="LinkedIn" /></td>
+                <td>
+                  <a href="https://www.linkedin.com/in/sashak0/">LinkedIn.com/in/SashaK0</a>
+                </td>
               </tr>
 
               <tr>
-                <td>Russian</td>
-                <td>mother tongue</td>
+                <td><img src="./css/icons/github.svg" alt="GitHub" /></td>
+                <td>
+                  <a href="https://github.com/sashak0">github.com/SashaK0</a>
+                </td>
               </tr>
 
               <tr>
-                <td>Dutch</td>
-                <td>intermediate</td>
+                <td><img src="./css/icons/mail.svg" alt="email" /></td>
+                <td>
+                  <a href="mailto:sasha.k0.work@gmail.com">sasha.k0.work@gmail.com</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td><img src="./css/icons/location.svg" alt="location" /></td>
+                <td><a>Belgium</a></td>
               </tr>
             </tbody>
           </table>
-
-          <h3>Interests</h3>
-          <span
-            >Currently learning development in blockchain (Solidity, Web3).
-            Interested in learning React or Vue. Great at karaoke.</span
-          >
         </div>
-        <div class="col right-col">
-          <h3 class="h-underline">Experience</h3>
 
-          <div class="row">
-            <div class="col years-col">Feb 2022 – present</div>
-            <div class="col">
-              <h5><a href="https://cluepoints.com/">CluePoints</a></h5>
-              <h6>Frontend Developer</h6>
-            </div>
-          </div>
-          <div class="description">Building cool stuff in Angular.</div>
+        <h3>Stack</h3>
+        <span>Angular <span title="version, not years">(6+)</span>, Java <span title="version, not years">(8+)</span>,
+          ElasticSearch, Typescript, HTML, CSS,
+          SASS, Bootstrap, Angular Material, Angular CLI, RxJS, NgRx Store,
+          Transloco, Spring Boot, AG Grid, Apache Jena, SPARQL, SQL, Git, Gradle,
+          Docker</span>
+        <h3>Languages</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>English</td>
+              <td>fluent</td>
+            </tr>
 
-          <div class="row mt-3">
-            <div class="col years-col">Feb 2019 – June 2021</div>
-            <div class="col">
-              <h5><a href="https://www.cogni.zone/">Cognizone</a></h5>
-              <h6>Full Stack Developer</h6>
-            </div>
-          </div>
-          <div class="description">
-            At Cognizone, I developed interactive web applications for
-            jurisdictional systems of Luxembourg using Java, Angular,
-            ElasticSearch and semantic technologies. I collaborated closely with
-            other developers and project managers using BitBucket and Jira. As
-            part of my responsibilities, I worked with UI/UX designers to create
-            responsive web pages according to mockups in InVision. I was
-            involved in the following projects:
-          </div>
+            <tr>
+              <td>Russian</td>
+              <td>mother tongue</td>
+            </tr>
 
-          <ul class="experience-sub">
-            <!-- <li>
+            <tr>
+              <td>Dutch</td>
+              <td>intermediate</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Interests</h3>
+        <span>Currently learning development in blockchain (web3.js).
+          Interested in learning React or Vue. Great at karaoke.</span>
+      </div>
+      <div class="col right-col">
+        <h3 class="h-underline pt-md-3">Experience</h3>
+
+        <div class="row">
+          <div class="col years-col">Feb 2022 – present</div>
+          <div class="col">
+            <h5><a href="https://cluepoints.com/">CluePoints</a></h5>
+            <h6>Frontend Developer</h6>
+          </div>
+        </div>
+        <div class="description">Working on a Risk-Based Quality Management web application for clinical trials using
+          Angular.</div>
+        <div class="row mt-4">
+          <div class="col years-col">Feb 2019 – June 2021</div>
+          <div class="col">
+            <h5><a href="https://www.cogni.zone/">Cognizone</a></h5>
+            <h6>Full Stack Developer</h6>
+          </div>
+        </div>
+        <div class="description">
+          At Cognizone, I developed interactive web applications for
+          jurisdictional systems of Luxembourg using Java, Angular,
+          ElasticSearch and semantic technologies. I collaborated closely with
+          other developers and project managers using BitBucket and Jira. As
+          part of my responsibilities, I worked with UI/UX designers to create
+          responsive web pages according to mockups in InVision. I was
+          involved in the following projects:
+        </div>
+
+        <ul class="experience-sub">
+          <!-- <li>
               <div>
                 EPDC (European Parliament Dataset Catalogue), ESCO (European
                 classification of Skills, Competences, Qualifications and
@@ -148,45 +145,46 @@
               </div>
             </li> -->
 
-            <li>
-              <div><a href="https://beta.legilux.public.lu/">Legilux</a></div>
-              <div class="description">
-                Implemented an advanced search tool, including filtering,
-                suggestions, search on contents, using Angular and
-                ElasticSearch. Proposed and implemented a solution for indexing
-                of long texts. Worked on SEO. Supervised a junior developer.
-              </div>
-            </li>
+          <li>
+            <div><a href="https://legilux.public.lu/">Legilux</a></div>
+            <div class="description">
+              Implemented an advanced search tool, including filtering,
+              suggestions, search on contents, using Angular and
+              ElasticSearch. Proposed and implemented a solution for indexing
+              of long texts. Worked on SEO. Supervised a junior developer.
+            </div>
+          </li>
 
-            <li>
-              <div>Legipro, Directives</div>
-              <div class="description">
-                Started with maintaining existing features, refactoring and
-                improving the code quality with the help of Sonar. Learned
-                frontend development with Angular. Wrote a Spring configuration
-                to substitute multiple similar CRUD controllers and services.
-                Worked with data visualisation library d3. Proposed and set up a
-                mapping to help with complex authentication logic.
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <h3 class="h-underline">Education</h3>
-
-      <div title="Diploma not acquired, but passed the Bachelor's thesis project">
-        <div class="row">
-          <div class="col years-col">2015 - 2019</div>
-          <div class="col">
-            <h6>KU Leuven</h6>
-          </div>
-        </div>
-        <div class="description">Informatics, minor Business & Innovation</div>
-        <div class="description">
-          For the Bachelor's thesis I worked in a team to develop a 3D flight
-          simulator in Java.
-        </div>
+          <li>
+            <div>Legipro, Directives</div>
+            <div class="description">
+              Started with maintaining existing features, refactoring and
+              improving the code quality with the help of Sonar. Learned
+              frontend development with Angular. Wrote a Spring configuration
+              to substitute multiple similar CRUD controllers and services.
+              Worked with data visualisation library d3. Proposed and set up a
+              mapping to help with complex authentication logic.
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-  </body>
+    <h3 class="h-underline">Education</h3>
+
+    <div title="Diploma not acquired, but passed the Bachelor's thesis project">
+      <div class="row">
+        <div class="col years-col">2015 - 2019</div>
+        <div class="col">
+          <h6>KU Leuven</h6>
+        </div>
+      </div>
+      <div class="description">Informatics, minor Business & Innovation</div>
+      <div class="description">
+        For the Bachelor's thesis I worked in a team to develop a 3D flight
+        simulator in Java.
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
