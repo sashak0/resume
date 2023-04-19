@@ -20,12 +20,17 @@ h3 {
 
 a:not(:hover) {
   color: inherit !important;
-  text-decoration: inherit !important;
+  /* text-decoration: inherit !important; */
 }
 
 @media print {
   * {
     font-family: Calibri;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: inherit !important;
   }
 
   .col-md-3 {
