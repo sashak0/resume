@@ -98,7 +98,14 @@ td:not(:first-child) {
 }
 
 .years-col {
-  max-width: 120px !important;
+  min-width: 102px;
+  max-width: 181px !important;
+}
+
+@media (max-width: 576px) {
+  .years-col {
+      max-width: 103px !important;
+    }
 }
 
 .experience-sub li {
