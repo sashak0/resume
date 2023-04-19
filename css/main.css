@@ -98,13 +98,13 @@ td:not(:first-child) {
 }
 
 .years-col {
-  min-width: 102px;
+  min-width: 103px;
   max-width: 181px !important;
 }
 
 @media (max-width: 576px) {
   .years-col {
-      max-width: 103px !important;
+      max-width: 105px !important;
     }
 }
 
